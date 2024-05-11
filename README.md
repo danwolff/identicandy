@@ -85,7 +85,7 @@ You are encouraged to try your own settings.  Below are simply references showin
 ./identicandy.py render_icon 931D387731bBbC988B31220
 
 # Add 200px and 300px PNG images to output
-./identicandy.py render_icon John -i 200 300
+./identicandy.py render_icon John -i 200 -i 300
 
 # Specify fewer colors, but with increasing complex grids
 ./identicandy.py render_icon Bob -c web_colors_16 -g 6
