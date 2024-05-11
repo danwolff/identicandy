@@ -68,9 +68,11 @@ Options:
 ```
 
 # Example usage
+You are encouraged to try your own settings.  Below are simply references showing the syntax:
 ```
 ./identicandy.py -h
 ./identicandy.py render_icon John
+./identicandy.py render_icon John -i 200 300
 ./identicandy.py render_icon Jane
 ./identicandy.py render_icon 931D387731bBbC988B31220
 ./identicandy.py render_icon Bob -c web_colors_16 -g 6
