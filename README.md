@@ -12,10 +12,9 @@ Goals:
 
 
 # Files
-- `identicandy.zip` - all files
-  - `identicandy.py` - the main module
-  - `svg_color_words.py` - help module where we configure color themes
-  - `README.md` - this file
+- `identicandy.py` - the main module
+- `svg_color_words.py` - help module where we configure color themes
+- `README.md` - this file
 
 
 # Environment setup
@@ -69,8 +68,13 @@ Options:
 ```
 
 # Example usage
+```
+./identicandy.py -h
 ./identicandy.py render_icon John
 ./identicandy.py render_icon Jane
 ./identicandy.py render_icon 931D387731bBbC988B31220
-
-mkdir output
+./identicandy.py render_icon Bob -c web_colors_16 -g 6
+./identicandy.py render_icon Bob -c web_colors_16 -g 12
+./identicandy.py render_icon Bob -c svg_blues_27 -g 12 
+./identicandy.py render_icon Bob -c svg_blues_27 -g 12 -n indigo -n lightblue -n mediumblue --debug
+```
