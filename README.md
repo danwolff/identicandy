@@ -1,14 +1,14 @@
 # Objectives
 
 Goals:
-- Visual appeal: Outputs need to be visually appealing for the app to not be degarded by this. If they are joyful/inspiring, that is better.  But they should not be overly distracting or likely to clash with a business UI, either.
-- Uniqueneness: We want similar-looking inputs to have noticably different outupts.
+- Visual appeal: Outputs need to be visually appealing for the consuming app(s) to not be degraded by this feature. If the icons generated are joyful/inspiring, that is better.  But the icons should not be overly distracting or likely to clash with a business UI, either.
+- Uniqueneness: We want similar-looking inputs to have noticably different outputs.
 - Speed: We want generation/availability fast enough to load into the app.
 - Repeatabilty: Any app in our ecosystem could (re)generate a "match" programmatically if the input same is exactly the same, assuming that app knows the algorithm.
 - Gestalt: The icons should all fit well together as a family, if many are seen together in a collection/list.
 - Suitabilty for use: in practice, image sizes should be possible for squares with edges ranging from roughly 32px to 512px.  Output the requested size, make all these look ok (32, 64, 128, 512 pixel sizes ok for simplicity).
 - Storage space - store reasonably compactly.
-- Accessibility - be accommodating of color blindness by avoiding Blue-Green and Yellow-Red issues if needed may be developed.
+- Accessibility - be accommodating of possible visual impairment; for example, for color blindness, make it possible to avoid blue-green and yellow-red ambiguity, if wanted.
 
 
 # Files
@@ -80,9 +80,13 @@ You are encouraged to try your own settings.  Below are simply references showin
 ./identicandy.py -h
 
 # Default usage
-./identicandy.py render_icon John
+./identicandy.py render_icon Jon
+./identicandy.py render_icon John  # See output is different for similar input
+./identicandy.py render_icon John  # See output is the same for the exact same input
 ./identicandy.py render_icon Jane
 ./identicandy.py render_icon 931D387731bBbC988B31220
+./identicandy.py render_icon "name@example.com"
+./identicandy.py render_icon "Firstname Lastname"
 
 # Add 200px and 300px PNG images to output
 ./identicandy.py render_icon John -i 200 -i 300
