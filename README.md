@@ -22,9 +22,15 @@ Goals:
 Install modules if needed, e.g.:
 
 ```
+pip install docopt cairosvg svgwrite
+```
+
+or
+
+```
 conda create -n "idneticandy1"
 conda activate idneticandy1
-conda install -c conda-forge docopt cairosvg python-xxhash svgwrite
+conda install -c conda-forge docopt cairosvg svgwrite
 ```
 
 
@@ -70,13 +76,24 @@ Options:
 # Example usage
 You are encouraged to try your own settings.  Below are simply references showing the syntax:
 ```
+# Show help
 ./identicandy.py -h
+
+# Default usage
 ./identicandy.py render_icon John
-./identicandy.py render_icon John -i 200 300
 ./identicandy.py render_icon Jane
 ./identicandy.py render_icon 931D387731bBbC988B31220
+
+# Add 200px and 300px PNG images to output
+./identicandy.py render_icon John -i 200 300
+
+# Specify fewer colors, but with increasing complex grids
 ./identicandy.py render_icon Bob -c web_colors_16 -g 6
 ./identicandy.py render_icon Bob -c web_colors_16 -g 12
+
+# Specify specific a specific blue theme and high complexity
 ./identicandy.py render_icon Bob -c svg_blues_27 -g 12 
+
+# Specify specific color theme and high complexity, avoiding specific colors, and providing debug level output logs
 ./identicandy.py render_icon Bob -c svg_blues_27 -g 12 -n indigo -n lightblue -n mediumblue --debug
 ```
