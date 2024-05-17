@@ -28,11 +28,11 @@ Install modules if needed, e.g.:
 pip install docopt cairosvg svgwrite
 ```
 
-or
+or, if using conda, something like:
 
 ```
-conda create -n "idneticandy1"
-conda activate idneticandy1
+conda create -n identicandy1
+conda activate identicandy1 
 conda install -c conda-forge docopt cairosvg svgwrite
 ```
 
