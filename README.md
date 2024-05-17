@@ -12,8 +12,11 @@ Goals:
 
 
 # Files
+## Code
 - `identicandy.py` - the main module
 - `svg_color_words.py` - help module where we configure color themes
+## Documentation
+- `example_output_gallery.pdf` - contains sample generated images using various settings
 - `README.md` - this file
 
 
